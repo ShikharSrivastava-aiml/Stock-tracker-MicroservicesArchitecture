@@ -1,4 +1,4 @@
-## To run the application enter the followwing commands in terminal:
+## To run the application enter the following commands in terminal:
 
 git clone https://github.com/ShikharSrivastava-aiml/StockResearchDashboard.git
 
