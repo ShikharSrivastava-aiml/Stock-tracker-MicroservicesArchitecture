@@ -9,7 +9,6 @@ from components.sidebar import render_sidebar
 from pages import stock_analysis, portfolio_manager, market_news, earnings_viewer
 from data.symbol_loader import load_symbols_database
 from data.api_client import APIClient
-from utils.styles import get_custom_css
 
 # Page configuration
 st.set_page_config(
@@ -19,8 +18,24 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Apply custom CSS
-st.markdown(get_custom_css(), unsafe_allow_html=True)
+# Hide Streamlit's default navigation (the "app" button)
+hide_streamlit_style = """
+    <style>
+    /* Hide the top-right menu and navigation */
+    #MainMenu {visibility: hidden;}
+    header {visibility: hidden;}
+    footer {visibility: hidden;}
+
+    /* Hide the page navigation if using multi-page */
+    [data-testid="stSidebarNav"] {display: none;}
+
+    /* Optional: Adjust sidebar spacing */
+    section[data-testid="stSidebar"] > div:first-child {
+        padding-top: 1rem;
+    }
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 # Initialize session state
 if 'logged_in' not in st.session_state:
