@@ -1,3 +1,6 @@
+## This application is made utilizing the microservice architecture.
+## Running the docker compose will start up multiple containers for each service present, which you can add and remove dynamically.
+
 
 
 ## To run the application enter the following commands in terminal:
