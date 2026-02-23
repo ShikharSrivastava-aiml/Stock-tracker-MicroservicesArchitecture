@@ -1,4 +1,7 @@
+## A Streamlit frontend orchestrates multiple FastAPI microservices (stock analysis, market news, portfolio, earnings) that fetch data from Alpha Vantage, registered/discovered via a Consul-backed service registry, all containerized with Docker Compose.
+
 ## This application is made utilizing the microservice architecture.
+
 ## Running the docker compose will start up multiple containers for each service present, which you can add and remove dynamically.
 
 ## Link- [Project Demo](https://github.com/ShikharSrivastava-aiml/StocksResearchDashboard/raw/main/Project%20Demo_%20Microservices%20in%20Action.mp4)
