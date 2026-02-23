@@ -1,4 +1,4 @@
-## A Streamlit frontend orchestrates multiple FastAPI microservices (stock analysis, market news, portfolio, earnings) that fetch data from Alpha Vantage, registered/discovered via a Consul-backed service registry, all containerized with Docker Compose.
+## This project is a Streamlit frontend that orchestrates multiple FastAPI microservices (stock analysis, market news, portfolio, earnings) which then fetch data from Alpha Vantage, registered/discovered via a Consul-backed service registry, all containerized with Docker Compose.
 
 ## This application is made utilizing the microservice architecture.
 
